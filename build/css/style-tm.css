@@ -3,4 +3,83 @@
 
 
 /* quenmatkhau */
+.menu-about h3, .menu-logined h3, .menu-account h3 {
+    background-color: rgb(83, 76, 76);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15
+px
+ 10
+px
+;
+    text-transform: uppercase;
+    margin: 0;
+    border-left: 5
+px
+ solid #958457;
+}
 
+h3 {
+    font-size: 18px;
+}
+h3{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+h3{
+    background: transparent;
+    border: 0 none;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+.h3, h3 {
+    font-size: 24px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20
+px
+;
+    margin-bottom: 10
+px
+;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.breadcrumb ul li + li:before {
+    content: "";
+    font-family: FontAwesome;
+    padding: 2
+px
+ 10
+px
+;
+    color: #aaaaaa;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: #717FE0;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #717FE0;
+    border-color: #717FE0;
+}
