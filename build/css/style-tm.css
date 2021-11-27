@@ -83,3 +83,21 @@ a {
     background-color: #717FE0;
     border-color: #717FE0;
 }
+/* Start giỏ hàng */
+.steps li.active span {
+    color: #958457;
+}
+.steps li span.step-number {
+    display: block;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+}
+.steps li span {
+    display: block;
+    color: #aaaaaa;
+    padding: 5px 0;
+}
+/* end gio hang */
