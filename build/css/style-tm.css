@@ -3,6 +3,59 @@
 
 
 /* quenmatkhau */
+
+.fade.in {
+    opacity: 1;
+}
+.alert-info {
+    color: rgb(49 112 143);
+    background-color: rgb(217 237 247);
+    border-color: rgb(188 232 241);
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0 0 0 / 0%);
+    border-radius: 4px;
+    font-size: 14px;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+
+@media (min-width: 992px){
+.col-md-offset-2 {
+    margin-left: 16.66666667%;
+}
+}
+@media (min-width: 992px){
+.col-md-8 {
+    width: 66.66666667%;
+}
+}
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* @media (min-width: 768px){
+.col-sm-offset-4 {
+    margin-left: 33.33333333%;
+}
+}
+@media (min-width: 768px){
+.col-sm-8 {
+    width: 66.66666667%;
+}
+} */
 .menu-about h3, .menu-logined h3, .menu-account h3 {
     background-color: rgb(83, 76, 76);
     color: #ffffff;
