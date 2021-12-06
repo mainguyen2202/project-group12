@@ -493,68 +493,36 @@
 	</div>
 
 	<!-- <h1>Đăng nhập</h1> -->
-	<div class="main">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3">
-<div class="menu-account">
-	<h3>
-        <span>
-            Tài khoản
-        </span>
-    </h3>
-    <ul>
-        <li><a href="dangnhap.html"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
-        <li><a href="dangky.html"><i class="fa fa-key"></i> Đăng ký</a></li>
-        <li><a href="quenmatkhau.html"><i class="fa fa-key"></i> Quên mật khẩu</a></li>
-    </ul>
-</div>                    </div>
-                    <div class="col-md-9">
-    
+	<div class="modal-content">
+		<div class="modal-body" style="padding: 20px 0px; width: 500px; margin: auto; border-radius: 50px;">
+			
+			<h3 style="margin-top: 30px; font-size: 3em; text-align: center; color: rgb(32, 31, 29); margin-bottom: 40px;">Đăng nhập</h3>
+			<form class="">
+				<input placeholder="Email" type="email" class="form-control" style="padding: 20px 10px; border-radius: 20px; margin: 20px 0px; outline: none; font-size: 1em; font-weight: 300;">
+				<input placeholder="Mật khẩu" type="email" class="form-control" style="padding: 20px; border-radius: 20px; margin: 20px 0px; outline: none; font-size: 1em; font-weight: 300;">
+			</form>
+				<button class="MuiButtonBase-root MuiButton-root MuiButton-text jss2" tabindex="0" type="button" style="margin-bottom: 30px; font-weight: 300; font-size: 1.5em; color: rgb(0, 0, 0); width: 100%; border-radius: 20px; background-color: rgb(140, 122, 238);">
+					<span class="MuiButton-label">Đăng nhập</span>
+					<span class="MuiTouchRipple-root"></span>
+				</button>
+				<h4 class="form-or" style="text-align: center;">Hoặc</h4>
+				<div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 15px; margin-bottom: 45px;">
+					<i class="fab fa-facebook" style="padding: 0px 7px; color: rgb(84, 88, 208); font-size: 5em; cursor: pointer;"></i>
+					<i class="fab fa-google-plus" style="padding: 0px 7px; color: rgb(210, 70, 70); font-size: 5em; cursor: pointer;"></i>
+				</div>
+				<h4 style="text-align: center; font-weight: 300;">Bạn chưa có tài khoản?
+					<a href="dangky.html">Đăng kí </a>
+				</h4>
+				<h4 style="text-align: center; font-weight: 300;">
+					<a href="quenmatkhau.html">Quên mật khẩu </a>
+				</h4>
+				
+				 
+			</div>
+		</div>
+	
 
-<div class="breadcrumb clearfix">
-    <ul>
-                    <li itemtype="http://shema.org/Breadcrumb" itemscope="" class="home">
-                        <a title="Đến trang chủ" href="index.html" itemprop="url"><span itemprop="title">Trang chủ</span></a>
-                    </li>
-                    <li class="icon-li"><strong>Đăng nhập</strong> </li>
-    </ul>
-</div>
-<script type="text/javascript">
-    $(".link-site-more").hover(function () { $(this).find(".s-c-n").show(); }, function () { $(this).find(".s-c-n").hide(); });
-</script>
-<script src="/app/services/accountServices.js"></script>
-<script src="/app/controllers/accountController.js"></script>
-<div class="login-content clearfix ng-scope" ng-controller="accountController" ng-init="initController()">
-    <h1 class="page-heading"><span>Đăng nhập</span></h1>
-    <!-- ngIf: IsError -->
-    <!-- ngIf: IsSuccess -->
-    <!-- ngIf: InValid -->
-    <div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
-        <form class="form-horizontal ng-pristine ng-valid-email ng-invalid ng-invalid-required" ng-submit="login()">
-            <div class="form-group">
-                <label for="Email" class="col-sm-4 control-label">Email</label>
-                <div class="col-sm-8">
-                    <input type="email" class="form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" ng-model="Email" ng-required="true" required="required">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="Password" class="col-sm-4 control-label">Mật khẩu</label>
-                <div class="col-sm-8">
-                    <input type="password" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-model="Password" ng-required="true" required="required">
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-8">
-                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
-                    <a href="quenmatkhau.html">Quên mật khẩu?</a>
-                </div>
 
-            </div>
-        </form>
-    </div>
-</div>
 
                     </div>
             </div>

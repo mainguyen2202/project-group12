@@ -500,107 +500,21 @@
 
 
 
-<div class="container">
-	<div class="row">
-			<div class="col-md-3">
-<div class="menu-account">
-<h3>
-<span>
-	Tài khoản
-</span>
-</h3>
-<ul>
-<li><a href="dangnhap.html"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
-<li><a href="dangky.html"><i class="fa fa-key"></i> Đăng ký</a></li>
-<li><a href="quenmatkhau.html"><i class="fa fa-key"></i> Quên mật khẩu</a></li>
-</ul>
-</div>                    </div>
-			<div class="col-md-9">
-
-<div class="breadcrumb clearfix">
-<ul>
-			<li itemtype="http://shema.org/Breadcrumb" itemscope="" class="home">
-				<a title="Đến trang chủ" href="index.html" itemprop="url"><span itemprop="title">Trang chủ</span></a>
-			</li>
-			<li class="icon-li"><strong>Quên mật khẩu</strong> </li>
-</ul>
-</div>
-<script type="text/javascript">
-$(".link-site-more").hover(function () { $(this).find(".s-c-n").show(); }, function () { $(this).find(".s-c-n").hide(); });
-</script>
-<script src="/app/services/accountServices.js"></script>
-<script src="/app/controllers/accountController.js"></script>
-<div class="foget-password-content clearfix ng-scope" ng-controller="accountController" ng-init="initController()">
-<h1 class="page-heading"><span>Quên mật khẩu</span></h1>
-<!-- ngIf: IsError -->
-<!-- ngIf: IsSuccess -->
-<!-- ngIf: InValid -->
-
-<!-- <div class="alert alert-info fade in"> -->
-<!-- <button data-dismiss="alert" class="close"></button> -->
-<div class="alert alert-info fade in">
-	<button data-dismiss="alert" class="close"></button>
-	<i class="fa-fw fa fa-check"></i>
-	Điền vào email của bạn để yêu cầu một mật khẩu mới. Một Email sẽ được gửi đến địa chỉ này để xác minh địa chỉ Email của bạn.
-</div>
-
-</div>
-
-<div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
-	<form class="form-horizontal ng-pristine ng-valid-email ng-invalid ng-invalid-required" ng-submit="forgetPassword()">
-		<div class="form-group">
-			<label class="col-sm-4 control-label">
-				<b style="font-size: 15px;">Email</b>
-				<small>(bắt buộc)</small>
-			</label>
-			<div class="col-sm-8">
-				<input type="email" class="form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" ng-model="Email" ng-required="true" required="required">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-4 control-label">
-				<b style="font-size: 15px;">Mã xác nhận</b>
-				<small>(bắt buộc)</small></label>
-			<div class="col-sm-8">
-				<input type="text" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-model="Captcha" ng-required="true" required="required">
-			</div>
-		</div>
-		<!-- <div class="form-group">
-			<div class="col-sm-offset-4 col-sm-8">
-				<img class="img-captcha" id="imgCaptcha" alt="captcha" src="/Captcha.ashx?t=1638768864806">
-				<a class="refresh-captcha" id="btnRefreshCapcha" href="javascript:void(0);">
-					<i class="glyphicon glyphicon-refresh"></i>
-				</a>
-			</div>
-		</div> -->
-		<div class="form-group">
-			<div class="col-sm-offset-4 col-sm-8">
-				<button type="submit" class="btn btn-primary">Gửi mật khẩu</button>
-				<a href="/dang-nhap.html">Quay lại đăng nhập</a>
-			</div>
-		</div>
-	</form>
-</div>
-</div>
-
-<script type="text/javascript">
-$(document).ready(function () {
-$("#btnRefreshCapcha").click(function () {
-	GetImageCaptcha();
-});
-});
-function GetImageCaptcha() {
-var date = new Date();
-var t = date.getTime();
-$("#imgCaptcha").attr("src", "/Captcha.ashx?t=" + t);
-}
-</script>
-			</div>
+<div class="modal-content">
+	<div class="modal-body" style="padding: 20px 0px; width: 500px; margin: auto; border-radius: 50px;">
+		<h3 style="margin-top: 30px; font-size: 3em; text-align: center; color: rgb(32, 31, 29); margin-bottom: 40px;">Quên mật khẩu</h3>
+		<form class="">
+			<input placeholder="Email" type="email" class="form-control" style="padding: 20px; border-radius: 20px; margin: 20px 0px; outline: none; font-size: 1em; font-weight: 300;">
+		</form>
+		<button class="MuiButtonBase-root MuiButton-root MuiButton-text" tabindex="0" type="button" style="margin-bottom: 30px; font-weight: 200; font-size: 1.3em; color: rgb(0, 0, 0); width: 100%; border-radius: 20px; background-color: rgb(140, 122, 238);">
+			<span class="MuiButton-label">GỬI ĐƯỜNG DẪN ĐẶT LẠI MẬT KHẨU</span>
+			<span class="MuiTouchRipple-root"></span>
+		</button>
+		<h3 style="text-align: center; font-weight: 400;">Bạn đã có tài khoản?
+			<a href="dangnhap.html">Đăng nhập </a>
+		</h3>
 	</div>
 </div>
-
-
-
 
 
 
