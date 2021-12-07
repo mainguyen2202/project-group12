@@ -6,11 +6,7 @@
 /* :: 3.0 Common/Base CSS */
 
 
-p {
-  color: #787878;
-  font-size: 14px;
-  line-height: 2;
-  font-weight: 400; }
+
 
 a {
   -webkit-transition: all 500ms ease 0s;
@@ -18,7 +14,7 @@ a {
   text-decoration: none;
   outline: 0 solid transparent;
   color: #fbf5f5;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px; }
   a:hover, a:focus {
     -webkit-transition: all 500ms ease 0s;
@@ -26,7 +22,7 @@ a {
     text-decoration: none;
     outline: 0 solid transparent;
     color: #000000;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 12px; }
 
 ul,
